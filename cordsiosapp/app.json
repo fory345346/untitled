@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Minecraft Tracker",
+    "slug": "minecraft-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#000000",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.minecraft.tracker",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "This app needs access to local network to find and connect to Minecraft servers on your Wi-Fi network.",
+        "NSBonjourServices": [
+          "_http._tcp"
+        ]
+      }
+    },
+    "android": {
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ],
+      "package": "com.minecraft.tracker",
+      "versionCode": 1
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "80751598-a7d7-4f0e-b021-ef6e31cf211d"
+      }
+    }
+  }
+}
